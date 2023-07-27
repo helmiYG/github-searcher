@@ -1,0 +1,31 @@
+@import "../../../assets/styles/main.scss";
+
+.a-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid;
+  margin: 0 auto;
+  margin-top: 30px;
+  // padding-bottom: 20px;
+  width: 210px;
+  height: 150px;
+  background-color:$white;
+  border-radius: 10px;
+  padding: 10px;
+
+  &:hover {
+    box-shadow: 1px 2px 10px $outer-space;
+    transform: translateY(-2px);
+  }
+  
+  &:active {
+    box-shadow: 0 0 5px $outer-space;
+    transform: translateY(2px);
+  }
+}
+
+.center {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}

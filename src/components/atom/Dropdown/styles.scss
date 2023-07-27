@@ -1,0 +1,65 @@
+@import "../../../assets/styles/main.scss";
+
+.dropdown-botton {
+  border: 1px solid grey;
+  border-radius: 4px;
+  height: 35px;
+  display: flex;
+  width: 120px;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 12px;
+  padding-right: 16px;
+  cursor: pointer;
+  margin-left: 5px;  
+
+  &:hover {
+    box-shadow: 1px 2px 2px $outer-space;
+    // transform: translateY(-2px);
+  }
+  
+  &:active {
+    box-shadow: 0 0 5px $outer-space;
+    transform: translateY(1px);
+  }
+
+  .image {
+    margin-top: 2px;
+    width: 10px;
+    height: 10px;
+  }
+
+  .dropdown-label {
+    text-transform: capitalize;
+    font-weight: 'normal';
+    font-size: 12px;
+  }
+}
+
+.dropdown-container {
+  margin-top: 5px;
+  margin-left: 5px; 
+  width: 120px;
+  position: absolute;
+  border-radius: 4px;
+  z-index: 100;
+  border: 1px solid;
+  background: linear-gradient(to right, #F6F6F6 8%, #F0F0F0 18%, #F6F6F6 33%);
+  box-shadow: 0 0 5px $outer-space;
+  overflow: hidden;
+
+  .dropdown-box {
+    cursor: pointer;
+    padding: 5px;
+
+    .dropdown-item {
+      padding: 5px;
+      .dropdown-label {
+        text-transform: capitalize;
+        font-weight: 'normal';
+        font-size: 12px;
+      }
+      
+    }
+  }
+}
