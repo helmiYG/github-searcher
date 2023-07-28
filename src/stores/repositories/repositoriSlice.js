@@ -16,7 +16,7 @@ export const fetchRepos = createAsyncThunk('github/repos', async (data, {rejectW
     ...data.params,
     q: data.params.q || 'a',
   }, headers: {
-    Authorization: `Bearer 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`
+    Authorization: `Bearer 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`
   }})
   .then((response) =>  response.data.items)
   .catch(error => error.response)
